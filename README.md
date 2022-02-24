@@ -8,7 +8,12 @@
 
 ## Chapters :cyclone:
 
-* [Node Fundamentals](/01-fundamentos-node/)
+* [01 - Node Fundamentals](/01-fundamentos-node/)
+
+* [02 - First project with Node](/02-primeiro-projeto-com-node/)
+
+
+
 
 
 <br />
