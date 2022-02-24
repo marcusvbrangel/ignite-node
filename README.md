@@ -20,7 +20,7 @@
 
 ## Contributing :cyclone:
 
-Have a look through existing [Issues](https://github.com/marcusvbrangel/full-stack-web3-blog/issues) and [Pull Requests](https://github.com/marcusvbrangel/full-stack-web3-blog/pulls) that you could help with.
+Have a look through existing [Issues](https://github.com/marcusvbrangel/ignite-node/issues) and [Pull Requests](https://github.com/marcusvbrangel/ignite-node/pulls) that you could help with.
 
 <br />
 
