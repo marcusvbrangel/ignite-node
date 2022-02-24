@@ -14,7 +14,7 @@ const customers = [];
  * id - uuid
  * statement []
  */
-app.post("/account", (request, response, next) => {
+app.post("/account", (request, response) => {
 
   const { cpf, name } = request.body;
 
@@ -37,7 +37,15 @@ app.post("/account", (request, response, next) => {
 
 });
 
+app.get("/statement/:cpf", (request, response) => {
 
+  const { cpf } = request.params;
+
+  const customer = customers.find((customer) => customer.cpf === cpf);
+
+  return response.status(200).json(customer.statement);
+
+});
 
 
 
