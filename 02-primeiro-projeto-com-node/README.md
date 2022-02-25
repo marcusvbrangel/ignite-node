@@ -2,6 +2,35 @@
 
 
 # Ignite Node - First project with Node
+# FinAPI - Financial
+
+<br />
+
+## Requirements
+
+- [ x ] Should be possible to create an account.
+- [ x ] Should be possible to fetch the customer's bank statement.
+- [ x ] Should be possible to make a deposit.
+- [ x ] Should be possible to make a withdrawal.
+- [ x ] Should be possible to search for the customer's bank statement by date.
+- [ x ] Should be possible to update the customer's account data.
+- [ x ] Should be possible to fetch the customer's account data.
+- [ x ] Should be possible to delete an account. 
+- [ x ] Should be possible to return the balance.
+
+
+<br />
+
+## Business Rules
+
+- [ x ] Should not be possible to register an account with an existing CPF.
+- [ x ] Should not be possible to make a deposit to a non-existing account.
+- [ x ] Should not be possible to fetch the statement of a non-existing account.
+- [ x ] Should not be possible to make a withdrawal from a non-existing account.
+- [ x ] Should not be possible to delete a non-existing account.
+- [ x ] Should not be possible to make a withdrawal when the balance is insufficient.  
+
+
 
 <br />
 
