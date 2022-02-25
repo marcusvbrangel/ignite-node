@@ -78,7 +78,6 @@ app.get("/statement", verifyIfAccoutExistsByCPF, (request, response) => {
 
 });
 
-
 app.post("/deposit", verifyIfAccoutExistsByCPF, (request, response) => {
 
   const { description, amount } = request.body;
@@ -88,7 +87,7 @@ app.post("/deposit", verifyIfAccoutExistsByCPF, (request, response) => {
   const statementOperation = {
     description,
     amount,
-    crated_at: new Date(),
+    created_at: new Date(),
     type: "credit"
   }
 
@@ -115,13 +114,29 @@ app.post("/withdraw", verifyIfAccoutExistsByCPF, (request, response) => {
 
   const statementOperation = {
     amount,
-    crated_at: new Date(),
+    created_at: new Date(),
     type: "debit"
   }
 
   customer.statement.push(statementOperation);
 
   return response.status(201).send();
+
+});
+
+app.get("/statement/date", verifyIfAccoutExistsByCPF, (request, response) => {
+
+  const { customer } = request;
+  
+  const { date } = request.query;
+  
+  const dateFormat = new Date(date + "  00:00");
+  
+
+  const statement = customer.statement.filter((statement) => 
+    statement.created_at.toDateString() === new Date(dateFormat).toDateString());
+    
+  return response.json(statement);
 
 });
 
